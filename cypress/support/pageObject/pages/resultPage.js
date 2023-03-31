@@ -8,9 +8,11 @@ export class ResultPage{
         cy.get(product).click();
     }
 
-    
-
-
+    selectTheFirstProduct(product){
+        cy.get(product)
+            .first()
+            .click()
+    }
 
 }
 
